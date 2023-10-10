@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>search</title>
+    <link rel="stylesheet" href="/Search.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-items-container">
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            style="margin-left: 20px"
+          >
+            Courses
+            <span class="material-symbols-outlined"> arrow_drop_down </span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#" data-course="IIT(JEE)"
+              >IIT(JEE)</a
+            >
+            <a
+              class="dropdown-item"
+              href="#"
+              data-course="Full stack development"
+              >Full stack development</a
+            >
+            <a class="dropdown-item" href="#" data-course="Front-End developer"
+              >Front-End developer</a
+            >
+            <a class="dropdown-item" href="#" data-course="Back-End developer"
+              >Back-End developer</a
+            >
+          </div>
+        </div>
+
+        <div class="nav-item" id="askDoubt">Ask Doubt</div>
+        <div class="nav-item">Skill</div>
+      </div>
+      <div class="dropdown">
+        <button
+          class="dropdown-toggle"
+          type="button"
+          id="profileDropdownButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Your Profile
+        </button>
+        <div class="dropdown-menu" aria-labelledby="profileDropdownButton">
+          <a class="dropdown-item" href="#" id="profileLink">Profile</a>
+          <a class="dropdown-item" href="#" id="logoutLink">Logout</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="search-section">
+      <div class="search-heading">
+        <h2>Get Your <span class="changecolor"> Doubts </span> Cleared.</h2>
+        <span class="Radha">
+          <p>Solution available for IIT JEE/exams & Web development</p></span
+        >
+      </div>
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Search for answers..."
+          class="search-input"
+          id="searchInput"
+        />
+
+        <button class="search-button" id="searchButton">Search</button>
+        <div class="upload-container">
+          <div class="upload-button" id="imageUpload">
+            <img src="/Assets/uploadimg.svg" alt="Upload Image" />
+          </div>
+          <input type="file" id="fileInput" style="display: none" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2 class="header">Why Ask Doubt?</h2>
+      <div class="four-boxes-container">
+        <div class="box box-content" style="background-color: #f0e68c">
+          <div class="box-image">
+            <img src="/Assets/qa.svg" alt="Image 1" />
+          </div>
+          <h3>40 Lakh + Questions</h3>
+          <p>View answers to all your questions without any hassle</p>
+        </div>
+
+        <div class="box box-content">
+          <div class="box-image">
+            <img src="/Assets/bulb.svg" alt="Image 2" />
+          </div>
+          <h3>Verified Answers</h3>
+          <p>Get expert answers so you don’t waste time</p>
+        </div>
+      </div>
+      <div class="four-boxes-container">
+        <div class="box box-content" style="background-color: #add8e6">
+          <div class="box-image">
+            <img src="/Assets/human.svg" alt="Image 3" />
+          </div>
+          <h3>500+ Textbook Solutions</h3>
+          <p>Browse questions from all popular textbooks of your grade</p>
+        </div>
+        <div class="box box-content" style="background-color: #4fffb0">
+          <div class="box-image">
+            <img src="/Assets/watch.svg" alt="Image 4" />
+          </div>
+          <h3>Instant Solution</h3>
+          <p>Get an answer to your question instantly</p>
+        </div>
+      </div>
+      <div><h4 class="Heading-two">Frquently Asked Questions FAQ'S ?</h4></div>
+      <div class="column-container">
+        <div class="Box-left">
+          <div class="faq-item">
+            <button class="button-one" onclick="toggleDropdown(this)">
+              How to Ask doubt in Doubt Mind Matter(DMM)?
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+            </button>
+            <div class="dropdown-content-one">
+              <p>You can solve your doubts by following these simple steps:</p>
+              <ol>
+                <li>Go to the Doubt Mind Matter website.</li>
+                <li>Click on the "Ask Doubts" button.</li>
+                <li>Type your question or upload an image of the question.</li>
+                <li>
+                  You will be redirected to the solution within a few minutes.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      
+  
+        <div class="Box-left">
+          <div class="faq-item">
+            <button class="button-one" onclick="toggleDropdown(this)">
+              Which is the best doubt-solving website ?
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+            </button>
+            <div class="dropdown-content-one">
+              <p>Doubt Mind Matter is one of the best doubt-solving websites for students who are preparing for IIT-JEE, Web development,software technology or online aptitude test.</p>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="Box-left">
+          <div class="faq-item">
+            <button class="button-one" onclick="toggleDropdown(this)">
+              I am not financially strong, but I want to study from your courses. Is there any financial aid available?
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+            </button>
+            <div class="dropdown-content-one">
+              We have allocated a total of 50 seats for students who are facing financial constraints.
+
+              You can apply for financial aid for the course by completing the application form Support Form.
+              
+              Please allow 7 business days for the response to your application, as our team will carefully review each submission.
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  
+  
+      <div class="custom-container">
+          <img src="/Assets/right1.png" alt="Image 1" />
+        </div>
+      </div>
+  
+      <footer>
+        <img src="./Assets/searchlogo.png" alt="Company Logo" class="logoImage">
+
+        <p>&copy; 2023 Doubt Mind Matter</p>
+
+      </footer>
+      
+  
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const searchButton = document.getElementById("searchButton");
+        const imageUploadButton = document.getElementById("imageUpload");
+        const fileInput = document.getElementById("fileInput");
+
+        if (searchButton && imageUploadButton && fileInput) {
+          searchButton.addEventListener("click", () => {
+            const searchInput = document.getElementById("searchInput");
+            if (searchInput) {
+              const inputValue = searchInput.value || "";
+              // Perform search action with inputValue
+              console.log("Search query:", inputValue);
+            }
+          });
+
+          imageUploadButton.addEventListener("click", () => {
+            // Trigger file input click event
+            fileInput.click();
+          });
+
+          fileInput.addEventListener("change", (event) => {
+            const selectedFile = event.target.files[0];
+            if (selectedFile) {
+              // Handle the selected file, e.g., upload it
+              console.log("Selected file:", selectedFile);
+            }
+          });
+        }
+      });
+    </script>
+ <script>
+  function toggleDropdown(button) {
+    var dropdownContent = button.nextElementSibling;
+    dropdownContent.style.display =
+      dropdownContent.style.display === "block" ? "none" : "block";
+  }
+</script>
+    <script src="/Search.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/signup.css" />
+    <title>Create an Account</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Create an Account</h2>
+      <form id="signup-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit">Sign Up</button>
+        <div id="error-container">
+          <p id="error-text" class="error-message"></p>
+        </div>
+      </form>
+
+      <p>Already have an account? <a href="/signin.html">Log in</a></p>
+      <p>
+        By continuing, you agree to our <a href="#">Terms of Service</a> and
+        <a href="#">Privacy Policy</a>
+      </p>
+      <!-- <p>
+        Unable to Login? We are here -
+        <a href="doubthelprazorpay@gmail.com">Pradeeptokas007@gmail.com</a>
+      </p> -->
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <!-- Initialize Firebase with your configuration -->
+    <script>
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBeZsckgcxqajMsYS0Fzvup7fjOi_gI0LQ",
+        authDomain: "neural-service-355601.firebaseapp.com",
+        databaseURL:
+          "https://neural-service-355601-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "neural-service-355601",
+        storageBucket: "neural-service-355601.appspot.com",
+        messagingSenderId: "227479323536",
+        appId: "1:227479323536:web:4b04db6e0846626f77a915",
+        measurementId: "G-FZD09LWMXJ",
+      };
+      // Initialize Firebase
+      const app = firebase.initializeApp(firebaseConfig);
+      // const analytics = firebase.analytics(app);
+    </script>
+    <script src="/newsignup.js"></script>
+  </body>
+</html>

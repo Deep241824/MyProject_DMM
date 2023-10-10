@@ -1,0 +1,147 @@
+
+        <button class="button" onclick="toggleDropdown(this)">
+          How to Ask doubt in Doubt Mind Matter(DMM)?
+        </button>
+
+       
+   .heading {
+  font-size: 16px;
+  text-align: center;
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.button {
+  font-size: 16px;
+  padding: 1rem;
+  background-color: #0c2340;
+  border: 1px solid transparent;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #008080;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-left: 125px;
+  margin-bottom: 20px;
+  font-family: "Merriweather", serif;
+  font-style: italic;
+}
+
+.button:hover {
+  background-color: #da2c43;
+  transform: scale(1.05);
+  border-color: #fbceb1;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  padding: 10px;
+
+  width: auto;
+  max-width: 300px;
+  margin-left: 125px;
+  margin-bottom: 20px;
+  position: absolute;
+  position: relative;
+  margin-bottom: 20px;
+}
+.dropdown-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+.dropdown-content ol {
+  list-style: decimal;
+  margin-left: 1.5em;
+  padding-left: 1em;
+}
+ul,
+ol {
+  font-family: "Open Sans", sans-serif;
+}
+
+.box-container {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  margin-left: 700px;
+  margin-top: -270px;
+  position: absolute;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header {
+  font-size: 24px;
+  margin: 40px 0;
+}
+
+
+
+.box-content {
+  background-color: #fbceb1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: row; /* Display content in a row layout */
+  align-items: center;
+  text-align: left;
+}
+
+    <div class="box-10">
+      <div class="faq-item">
+        <div class="dropdown-container">
+          <button class="button-one" onclick="toggleDropdown(this)">
+            How to Ask doubt in Doubt Mind Matter(DMM)?
+          </button>
+          <div class="dropdown-content-one">
+            <p>You can solve your doubts by following these simple steps:</p>
+            <ol>
+              <li>Go to the Doubt Mind Matter website.</li>
+              <li>Click on the "Ask Doubts" button.</li>
+              <li>Type your question or upload an image of the question.</li>
+              <li>
+                You will be redirected to the solution within a few minutes.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+    <div class="box-10">
+      <div class="faq-item">
+        <div class="dropdown-container">
+          <button class="button-one" onclick="toggleDropdown(this)">
+            Which is the best doubt-solving website?
+          </button>
+          <div class="dropdown-content-one">
+            <p>
+              Doubt Mind Matter is one of the best doubt-solving websites for
+              students preparing for competitive examinations like IIT-JEE,
+              Relevel online Exam for Web development, and other SDE Interviews.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  

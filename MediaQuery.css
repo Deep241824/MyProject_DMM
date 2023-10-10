@@ -1,0 +1,20 @@
+@media screen and (max-width:991px) {
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+        
+    }
+    .nav-links{
+        display: none;
+    }
+    .Example-area
+    {
+        gap: 20px;
+    }
+    .Example-card{
+        width: calc(50%-10px);
+    }
+    .cta{
+        padding-block: 80px;
+    }
+}
